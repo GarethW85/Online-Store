@@ -1,0 +1,849 @@
+/* add font family link here from google fonts */
+/* universal selectors  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling the banner hero section area */
+.header {
+
+        min-height: 100vh;
+        width: 100%;
+        /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),  url("https://cdn.wallpapersafari.com/70/59/M0FjCZ.jpg"); */
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(255, 255, 255, 0.127)),  url("https://cdn.wallpapersafari.com/90/37/BneDh8.jpg");
+
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* display the alignment for the container items */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+/* The LEFT logo image size goes here*/
+nav img {
+    width: 150px;
+}
+
+/* Aligning the links to the right  */
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+/* styling the text  */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* styling the links itself  with colour and font size etc etc*/
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size:  13px;
+}
+
+/* styling the hover effect on the links when you hover*/
+.nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9c8367;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* styling what happens after you hover on it  */
+.nav-links ul li :hover::after  {
+    width: 100%;
+}
+
+
+/* Banner Content Section */
+
+.backdoorlogo {
+    width: 700px;
+    padding: 20px;
+}
+
+/* styling the center text  */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+ }
+
+ .text-box p {
+    margin:  10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+ }
+
+ /* styling the middle banner button */
+ .hero-btn {
+     display: inline-block;
+     text-decoration: none;
+     color: #fff;
+     border:  1px solid #fff;
+     padding:  12px 34px ;
+     font-size: 13px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+ }
+
+ /* styling the hover effect when your cursor is on the button */
+ .hero-btn:hover {
+    border: 1px solid #9c8367;
+    background: #9c8367;
+    transition: 1s;
+ }
+
+ .hero-btn-clean {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border:  1px solid #000;
+    padding:  12px 34px ;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+ }
+
+ @media (max-width: 700px) {
+    .backdoorlogo {
+        width: 400px;
+
+    }
+    
+  }
+
+ /* responsive design code for HERO Section*/
+
+ /* burger bar for responsive hidden */
+ nav .fa {
+
+    display: none;
+ }
+
+ @media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+     }
+
+     .nav-links ul li {
+        display: block;
+     }
+
+     .nav-links {
+        position: fixed;
+        background:  #9c8367;
+        height: 100vh;
+        width: 200px;
+        top: 0%;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+     }
+    
+     /* burger bar displayed when open  */
+     nav .fa {
+         display: block;
+         color: #fff;
+         margin: 10px;
+         font-size: 22px;
+         cursor: pointer;
+     }
+
+     .nav-links ul {
+         padding: 30px;
+
+     }
+ }
+
+
+
+
+
+ 
+
+ /* ---- Course Section---- */
+
+ .course {
+    width:60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+ }
+
+.campus-col {
+    height: 500px;
+} 
+
+ .img {
+    height: 500px;
+ }
+
+ .row {
+     margin-top:5% ;
+     display: flex ;
+     justify-content: space-between;
+ }
+
+ .course-col {
+     flex-basis: 16%;
+     height: 500px;
+     background: #fff3f3;
+     border-radius:  10px;
+     margin-bottom: 5%;
+     padding: 30px 12px;
+     box-sizing: border-box;
+     transition: 0.5s;
+  }
+
+ #gear {
+    height: 600px;
+    width: max-content;
+ }
+
+  /* hover effect on colums box shadow on hover*/
+  .course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+
+  /* --- The responsive code for the COURSE SECTION setting it to columns---*/
+
+  @media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+
+  }
+
+
+
+
+
+  /* ---- Campus Section---- */
+
+
+  .campus {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .campus-col {
+    flex-basis: 32%;  
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* image size and getting rid of the bottom line under the image */
+  .campus-col img {
+      width: 100% ;
+      display: block;
+      height: 300px;
+      border-radius: 20px;
+  }
+
+  .layer {
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  0.5s;
+  }
+
+  /* adding a hover effect */
+  .layer:hover {
+    background: #9c8367ab;
+    width: 100%;
+  }
+
+  /* styling the small text that appears when hovered on */
+  .layer h3 {
+      width: 100%;
+      font-weight: 500;
+      color: #fff ;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) ;
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+  }
+/* on hover animate text to the middle and change opacity to 1 to view it  */
+  .layer:hover h3 {
+      bottom: 49%;
+      opacity: 1;
+      
+      
+  }
+
+
+
+  /* ------ Cleaning Section ------ */
+
+  /* aligning the header text and paragraph */
+  .facilities {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 100px;
+      background-color: #E3DFDC;
+  }
+
+  .facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5% ;
+    text-align: left;
+ }
+
+ .facilities-col img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .facilities-col p {
+     padding:0 ;
+ }
+
+ .facilities-col h3 {
+     margin-top: 16px;
+     margin-bottom: 15px;
+     text-align: left;
+ }
+
+
+.post-container {
+    height: 500px;
+   
+}
+.post-container img {
+    float: left;
+    clear:left;
+    padding-left: 30px;
+    display: flex;
+    border-radius: 20px;
+}
+
+
+.post-thumb {
+    text-align: right;
+    padding: 15px;
+    padding-top: 100px;
+}
+
+.cleaning-logo {
+    width: 700px;
+    height: 500px;
+}
+
+
+.hero-btn-clean:hover {
+    border:  1px solid #fff;
+    background: #9c8367;
+    transition: 1s;
+ }
+
+ .hero-btn-clean {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border:  1px solid #000;
+    padding:  12px 34px ;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+ }
+
+
+ /* ------ Testimonials Section------ */
+
+ .testimonials {
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+ }
+
+
+.testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #9c83677c;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+} 
+
+.testimonial-col img {
+    height: 40px;
+    margin-left:5px ;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{ 
+    padding: 0;
+}
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa {
+    color:#9c8367 ;
+}
+
+/* Resposive section for testimonials */
+
+@media (max-width: 700px) {
+    .testimonial-col img {
+            margin-left:0px ;
+            margin-right: 15px;
+    }
+
+    .post-container img {
+        width: 100%;
+    }
+
+    .post-content{
+        text-align: center;
+    }
+
+    .cleaning-logo {
+        width: 30px;
+        height: 300px;
+    }
+
+    .post-container {
+        height: max-content;
+    }
+
+    #gear {
+        width: 100%;
+    }
+}
+
+
+
+
+/* VIDEO */
+
+.banner{
+    margin: 100px auto;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.233),rgba(0, 0, 0, 0.74)),url(https://cdn.shopify.com/s/files/1/0519/0850/9864/collections/banner700.jpg?v=1608816772); */
+}
+
+.banners {
+    width: 100%;
+    height:500px;
+    background-position: center;
+}
+
+/* ------ CONTACT US SECTION ------ */
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.301)),url("https://cdn.shopify.com/s/files/1/0248/7153/4646/articles/yeezy_banner_1400x.png?v=1649342030");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .ctn h1 {
+        font-size:  24px;
+    }
+}
+
+
+
+
+/* ------ Footer Section------ */
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom:  25px;
+    margin-top: 20px;
+    font-family: 600;
+}
+
+.icons .fa {
+    color:  #9c8367;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #9c8367;
+}
+
+
+
+
+
+
+
+
+/* ----- About Us Page----- */
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://wallpaperaccess.com/full/1634838.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/* Center the text About Us in the middle of the banner background */
+.sub-header h1 {
+    margin-top: 100px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom:50px ;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.about-col h1 {
+    padding: 0;
+}
+
+.about-col p  {
+    padding: 15px 0 25px;
+}
+
+.red-btn {
+    border: 1px solid #9c8367;
+    background: transparent;
+    color: #9c8367;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
+
+
+/* --------- blog-content ------- */
+
+    /* styling left side of the blog */
+
+.blog-content {
+    width:  80% ;
+    margin: auto;
+    padding: 6px 0;
+}
+
+.blog-left {
+    flex-basis: 65%;
+}
+
+.blog-left img {
+    width: 100%;
+}
+
+.blog-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-left p {
+    color: #999;
+    padding:0 ;
+}
+
+
+    /* styling right side of the blog */
+
+.blog-right {
+    flex-basis: 32%;
+}
+
+.blog-right h3{
+    background:#9c8367;
+    color: #fff;
+    padding:7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#555 ;
+    padding: 8px ;
+    box-sizing: border-box;
+}
+
+/* styling the comments form BOX */
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3{
+    text-align: left;
+}
+
+/* styling the comment form */
+
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-box button {
+    margin: 10px 0;
+}
+
+/* making the header text responsive */
+@media (max-width:700px) {
+    .sub-header h1 {
+        font-size: 24px;
+        }
+}
+
+
+
+/* ----- contact us page ----- */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+
+.contact-col div {
+    display: flex;   
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #9c8367;
+    margin: 10px;
+    margin-right: 30px ;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding:15px;
+    margin-bottom: 17px;
+    outline: none;
+    border:  1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+/*  Carousal  */
+
+#banners-brand {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    width: 680px;
+}
+
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card { 
+    display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+    width: 300px;
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+  overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+
+
+.hero-btn:hover {
+    color: #fff;
+}
+
+.hero-btn:visited {
+    color: #fff;
+}
+
+.hero-btn-clean:hover {
+    color: #fff;
+}
+
+/* Video  */
+
+.videos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+.yeezyvideo {
+    width: ma;
+    height:500px ;
+}
+
+
+

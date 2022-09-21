@@ -1,0 +1,58 @@
+/*Set dimensions of all images*/
+.container .slider {
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    right:0 !important;
+}
+
+.gallery-img {
+    width: max-content;
+    height: 250px;
+    padding: 20px;
+    right:0 !important;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .carousel-slide {
+    /*Flex allows image to bleed to end*/
+    display: flex;
+    width: 100%;
+    height: 500px;
+  }
+  
+  #prevbutton {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 3%;
+    z-index: 10;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+  }
+  
+  #nextbutton {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 3%;
+    z-index: 10;
+    color: #fff	;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+  }
