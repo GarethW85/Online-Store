@@ -134,9 +134,12 @@ nav img {
  @media (max-width: 700px) {
     .backdoorlogo {
         width: 400px;
-
-    }
-    
+    }   
+  }
+  
+  /* disable video controls */
+  video::-webkit-media-controls {
+    display: none;
   }
 
  /* responsive design code for HERO Section*/
