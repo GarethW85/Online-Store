@@ -563,21 +563,68 @@ nav img {
     margin-top: 100px;
 }
 
-.about-us {
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom:50px ;
+
+.mission {
+    margin-right: 170px;
 }
 
-.about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
+.headerh1 {
+    padding-top: 50px;
 }
 
-.about-col img {
-    width: 100%;
+.missionbtn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
 }
+
+#small {
+        width: 150px;
+        margin-left: 110px;
+        margin-top: 20px;
+}
+
+#small2 {
+    width: 180px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+
+.aboutus{
+    border-radius: 30px !important;
+
+}
+
+.aboutus2 {
+    border-radius: 30px !important;
+}
+
+
+.about-col h1 {
+    padding: 0;
+}
+
+.about-col p  {
+    padding: 15px 0 25px;
+}
+
+
+.aboutheader {
+text-align: center;
+}
+
+.red-btn {
+    border: 1px solid #9c8367;
+    background: transparent;
+    color: #9c8367;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
 
 .about-col h1 {
     padding: 0;
@@ -685,6 +732,21 @@ nav img {
     .sub-header h1 {
         font-size: 24px;
         }
+
+    #small {
+        width: 70px;
+    }
+    
+    #small2 {
+        width: 130px;
+        padding-bottom: 20px;
+    }
+
+    .headerh1 {
+        padding-top: 70px;
+        font-size: 15px;
+        font-weight:600
+    }
 }
 
 
@@ -846,7 +908,4 @@ h1.heading {
 .yeezyvideo {
     width: ma;
     height:500px ;
-}
-
-
-
+    }

@@ -1,5 +1,4 @@
 // Toggle menu for responsive design
-
 let navLinks = document.getElementById("navLinks");
     function showMenu() {
         navLinks.style.right = "0"
@@ -11,12 +10,9 @@ let navLinks = document.getElementById("navLinks");
 
 
 // Slider
-
 // Sets variables to return inner div and images
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-
-// Sets variables to return buttons
 const prevBtn = document.querySelector('#prevbutton');
 const nextBtn = document.querySelector('#nextbutton');
 
@@ -26,7 +22,6 @@ const size = carouselImages[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
 
 // FUNCTIONS
-
 // Add a function to track next button clicks
 nextBtn.addEventListener('click', function () {
   if (counter >= carouselImages.length -1) return;
