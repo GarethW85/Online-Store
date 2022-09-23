@@ -15,12 +15,10 @@ const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 const prevBtn = document.querySelector('#prevbutton');
 const nextBtn = document.querySelector('#nextbutton');
-
 // Creates a counter to track which image we are on
 let counter = 1;
 const size = carouselImages[0].clientWidth;
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; 
-
 // FUNCTIONS
 // Add a function to track next button clicks
 nextBtn.addEventListener('click', function () {
@@ -29,7 +27,6 @@ nextBtn.addEventListener('click', function () {
   counter++;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-
 //create function to look for PREV button clicks
 prevBtn.addEventListener('click',() => {
   if (counter <= 0) return;
@@ -37,7 +34,6 @@ prevBtn.addEventListener('click',() => {
   counter--;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-
 // This function is triggered after transformation
 carouselSlide.addEventListener('transitionend', () => {
   if (carouselImages[counter].id === 'lastClone') {
@@ -69,3 +65,5 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Form Validation
