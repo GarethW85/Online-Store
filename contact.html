@@ -4,9 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://i.pinimg.com/564x/ef/1f/e9/ef1fe940f2c898351068f0af54bcc100.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google fonts link goes here . Get it from Google Fonts after selecting the various weights -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <!-- link to resposnive JAVASCRIPT used for the burger bar menu . YOu need this to have a menu icon when resposnive -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>SPLY-350 | CONTACT</title>
 </head>
-<body>
-    
+  <!-- header and navigation section -->
+<section class="sub-header">
+    <nav>
+        <a href="Index.html"><img src="./images/logo/adidas-group.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/lookbook.html">LOOKBOOK</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+                <li><a href="/cart.html"><i class="bi bi-bag"></i></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="headerh1">Contact Us</h1>
+</section>  
+
+ <!-------- contact us -------->
+<section class="location" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+    1d3311.326339016427!2d18.42040871572982!3d-33.906999628475006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67599abb5bb3%3A0xcc1a97af54b0520b!2sV%20%26%20A%20Waterfront%2C%20Victoria%20%26%20Alfred%20Waterfront%2C%20Cape%20Town%2C%208001!5e0!3m2!1sen!2sza!4v1643291110998!5m2!1sen!2sza" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+
+<section class="contact-us" >
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i> 
+                <span>
+                    <h5>V&A Waterfront , Shop 17a</h5>
+                    <p>Cape Town , South Africa. 8000</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i> 
+                <span>
+                    <h5>+27 21 123-4567</h5>
+                    <p>Monday - Friday , 8am to 5pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i> 
+                <span>
+                    <h5>info@thebackdoor.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <!-- send messages to form-hander php form page -->
+            <form action="form-handler.php"  method="post">
+                <input type="text"name="name" placeholder="Enter your Name" required>
+                <input type="email" name="email" placeholder="Enter email Address" required>
+                <input type="text" name="subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>   
+</section>
+
+<!-------- Footer -------->
+<hr>
+<section class="footer">
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p> &copy Website Design <i class="fa fa-heart-o"></i> by Gareth Williams</p>
+</section>
+
+<!-- Scripts -->
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.js" integrity="sha512-uKxirna7d5STmVXEMQYBVRW1nERrqHjwOubv4QcK4oYaaifLiEnN/aLIJxVsyK4R1K+awpNIG73RaQfT1DZ8ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 </body>
 </html>
