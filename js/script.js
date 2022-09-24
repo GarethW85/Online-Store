@@ -66,4 +66,8 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// Form Validation
+// Email sent 
+function emailsent () {
+  alert("Email recevied, we will be in touch");
+  window.location.href = "index.html";
+}

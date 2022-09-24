@@ -519,7 +519,7 @@ nav .fa {
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://wallpaperaccess.com/full/1634838.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/backgrounds/yeezy-beluga-4.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -896,4 +896,8 @@ h1.heading {
     margin-top: 170px !important;
   }
 
-  
+  /* Cart Icon Styling */
+  #cart-icon {
+    font-size: 1rem;
+    cursor: pointer;
+}

@@ -30,7 +30,7 @@
                 <li><a href="/about.html">ABOUT</a></li>
                 <li><a href="/lookbook.html">LOOKBOOK</a></li>
                 <li><a href="/contact.html">CONTACT</a></li>
-                <li><a href="/cart.html"><i class="bi bi-bag"></i></a></li>
+                <li><a href="/cart.html"><i class="bi bi-bag" id="cart-icon"></i></a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -73,12 +73,12 @@
         </div>
         <div class="contact-col">
             <!-- send messages to form-hander php form page -->
-            <form action="form-handler.php"  method="post">
+            <form action="index.html" method="post">
                 <input type="text"name="name" placeholder="Enter your Name" required>
                 <input type="email" name="email" placeholder="Enter email Address" required>
                 <input type="text" name="subject" placeholder="Enter your Subject" required>
                 <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="hero-btn red-btn">Send Message</button>
+                <button type="submit" class="hero-btn red-btn" onclick="emailsent()">Send Message</button>
             </form>
         </div>
     </div>   
@@ -93,7 +93,7 @@
         <i class="fa fa-instagram"></i>
         <i class="fa fa-linkedin"></i>
     </div>
-    <p> &copy Website Design <i class="fa fa-heart-o"></i> by Gareth Williams</p>
+    <p> &copy Developed <i class="fa fa-heart-o"></i> by Gareth Williams</p>
 </section>
 
 <!-- Scripts -->

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://i.pinimg.com/564x/ef/1f/e9/ef1fe940f2c898351068f0af54bcc100.jpg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lookbook.css">
     <!-- google fonts link goes here . Get it from Google Fonts after selecting the various weights -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +32,240 @@
                 <li><a href="/about.html">ABOUT</a></li>
                 <li><a href="/lookbook.html">LOOKBOOK</a></li>
                 <li><a href="/contact.html">CONTACT</a></li>
-                <li><a href="/cart.html"><i class="bi bi-bag"></i></a></li>
+                <li><a href="/cart.html"><i class="bi bi-bag" id="cart-icon"></i></a></li>
+                <!-- <div class="cart">
+                    <h2 class="cart-title">Your Items</h2>
+                </div> -->
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <h1 class="headerh1">Lookbook</h1>
 </section>
-<body>
- 
+
+<!-- Shopping Area -->
+<section class="shop container">
+    <h2 class="section-title">Sneakers</h2>
+    <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/airmax1-patta-monarch.jpg" alt="" class="product-img">
+                <h2 class="product-title">AM 1 PATTA MONARCH</h2>
+                <span class="price">R4500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 2-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/airmax1-patta-noiseaqua.jpg" alt="" class="product-img">
+                <h2 class="product-title">AM 1 PATTA NOISE AQUA</h2>
+                <span class="price">R4100</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 3-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/airmax1-patta-whitesilver.jpg" alt="" class="product-img">
+                <h2 class="product-title">AM1 PATTA WHITE SILVER</h2>
+                <span class="price">R6500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 4-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/newbalance-9060-joefreshgoods.jpg" alt="" class="product-img">
+                <h2 class="product-title">NEW BALANCE 9060 JFG</h2>
+                <span class="price">R5000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 5-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-500.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 500 TAUPE HAZE</h2>
+                <span class="price">R4500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 6-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-700-brightblue.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 700 V1 BLUE</h2>
+                <span class="price">R6100</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 7-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-700-cream.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 700 V2 CREAMS</h2>
+                <span class="price">R6700</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 8-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-700v3.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 700 V3 AZARETH</h2>
+                <span class="price">R5500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 9-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-slide-ochre.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY SLIDE OCHRE</h2>
+                <span class="price">R3500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 10-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-slide-onyx.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY SLIDE ONYX</h2>
+                <span class="price">R4000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 11-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-zebra.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 350 V2 ZEBRA</h2>
+                <span class="price">R6700</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 12-->
+            <div class="product-box">
+                <img src="./images/products/sneakers/yeezy-zyon.jpg" alt="" class="product-img">
+                <h2 class="product-title">YEEZY 350 V2 ZYON</h2>
+                <span class="price">R6000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+        </div>
+</section>
+<section class="shop container">
+    <h2 class="section-title">Apparel</h2>
+    <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1-->
+            <div class="product-box">
+                <img src="./images/products/apparel/aasc-hoodie-black.jpg" alt="" class="product-img">
+                <h2 class="product-title">AASC HOODIE</h2>
+                <span class="price">R4100</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 2-->
+            <div class="product-box">
+                <img src="./images/products/apparel/cactusjack-tshirt.jpg" alt="" class="product-img">
+                <h2 class="product-title">CACTUS JACK TSHIRT</h2>
+                <span class="price">R3300</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 3-->
+            <div class="product-box">
+                <img src="./images/products/apparel/essentails-sweatpants.jpg" alt="" class="product-img">
+                <h2 class="product-title">ESSENTIALS SWEATS</h2>
+                <span class="price">R4500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 4-->
+            <div class="product-box">
+                <img src="./images/products/apparel/essentials-cream-crewneck.jpg" alt="" class="product-img">
+                <h2 class="product-title">ESSENTIALS CREWNECK</h2>
+                <span class="price">R5000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 5-->
+            <div class="product-box">
+                <img src="./images/products/apparel/essentials-hoodie1.jpg" alt="" class="product-img">
+                <h2 class="product-title">ESSENTIALS HOODIE</h2>
+                <span class="price">R5000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 6-->
+            <div class="product-box">
+                <img src="./images/products/apparel/fearofgod-1977.jpg" alt="" class="product-img">
+                <h2 class="product-title">FOG 1977 HOODIE</h2>
+                <span class="price">R4500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 7-->
+            <div class="product-box">
+                <img src="./images/products/apparel/palace-tshirt.jpg" alt="" class="product-img">
+                <h2 class="product-title">PALACE TSHIRT</h2>
+                <span class="price">R2700</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 8-->
+            <div class="product-box">
+                <img src="./images/products/apparel/stussy-basic.jpg" alt="" class="product-img">
+                <h2 class="product-title">STUSSY BASIC TSHIRT</h2>
+                <span class="price">R3500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 9-->
+            <div class="product-box">
+                <img src="./images/products/apparel/stussy-hearts.jpg" alt="" class="product-img">
+                <h2 class="product-title">STUSSY HEARTS TSHIRT</h2>
+                <span class="price">R3000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+        </div>
+</section>
+<section class="shop container">
+    <h2 class="section-title">Accessories</h2>
+    <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1-->
+            <div class="product-box">
+                <img src="./images/products/accessories/aimeleondore-navycap.jpg" alt="" class="product-img">
+                <h2 class="product-title">AIME NAVY CAP</h2>
+                <span class="price">R2700</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 2-->
+            <div class="product-box">
+                <img src="./images/products/accessories/aimeleondore-rosecap.jpg" alt="" class="product-img">
+                <h2 class="product-title">AIME ROSE CAP</h2>
+                <span class="price">R2700</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 3-->
+            <div class="product-box">
+                <img src="./images/products/accessories/bertier-laces.jpg" alt="" class="product-img">
+                <h2 class="product-title">BERTIER LACES WAX</h2>
+                <span class="price">R1500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 4-->
+            <div class="product-box">
+                <img src="./images/products/accessories/noah-totebag.jpg" alt="" class="product-img">
+                <h2 class="product-title">NOAH TOTE BAG</h2>
+                <span class="price">R2500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 5-->
+            <div class="product-box">
+                <img src="./images/products/accessories/palace-snakebag-tote.jpg" alt="" class="product-img">
+                <h2 class="product-title">PALACE SNAKE BAG</h2>
+                <span class="price">R3000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 6-->
+            <div class="product-box">
+                <img src="./images/products/accessories/patta-coinwallet.jpg" alt="" class="product-img">
+                <h2 class="product-title">PATTA COIN WALLET</h2>
+                <span class="price">R2000</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 7-->
+            <div class="product-box">
+                <img src="./images/products/accessories/stussy-bucketcap.jpg" alt="" class="product-img">
+                <h2 class="product-title">STUSSY BUCKET CAP</h2>
+                <span class="price">R1500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box 8-->
+            <div class="product-box">
+                <img src="./images/products/accessories/supreme-canvas-backpack.jpg" alt="" class="product-img">
+                <h2 class="product-title">SUPREME BACKPACK</h2>
+                <span class="price">R4500</span>
+                <i class="bi bi-bag add-cart" id="cart-icon"></i>
+            </div>
+        </div>
+</section>
+     
 <!-------- Footer -------->
 <hr>
 <section class="footer">
@@ -49,7 +275,7 @@
         <i class="fa fa-instagram"></i>
         <i class="fa fa-linkedin"></i>
     </div>
-    <p> &copy Website Design <i class="fa fa-heart-o"></i> by Gareth Williams</p>
+    <p> &copy Developed <i class="fa fa-heart-o"></i> by Gareth Williams</p>
 </section>
 
 <!-- Scripts -->
