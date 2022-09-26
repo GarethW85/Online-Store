@@ -67,7 +67,7 @@ function addItemFunction(e) {
   const img = e.target.parentElement.parentElement.previousElementSibling.src;
   const name = e.target.parentElement.previousElementSibling.textContent;
   let price = e.target.parentElement.children[0].textContent;
-  // price = price.replace("Price: R", '')
+  price = price.replace("R", '')
   const item = new CartItem(name, img, price);
   LocalCart.addItemToLocalCart(id, item);
   alert("Item added to cart");
@@ -99,28 +99,28 @@ wholeCartWindow.addEventListener("mouseleave", () => {
 });
 
 // Displays the carts UI once new items are added
-function updateCartUI() {
-  const cartWrapper = document.querySelector(".cart-wrapper");
-  cartWrapper.innerHTML = "";
-  const items = LocalCart.getLocalCartItems();
-  if (items === null) return;
-  let count = 0;
-  let total = 0;
-  for (const [key, value] of items.entries()) {
-    const cartItem = document.createElement("div");
-    cartItem.classList.add("cart-item");
-    let price = value.price * value.quantity;
-    price = Math.round(price * 100) / 100;
-    count += 1;
-    total += price;
-    total = Math.round(total * 100) / 100;
-    cartItem.innerHTML = `
+function updateCartUI(){
+    const cartWrapper = document.querySelector('.cart-wrapper')
+    cartWrapper.innerHTML=""
+    const items = LocalCart.getLocalCartItems()
+    if(items === null) return
+    let count = 0
+    let total = 0
+    for(const [key, value] of items.entries()){
+        const cartItem = document.createElement('div')
+        cartItem.classList.add('cart-item')
+        let price = value.price * value.quantity
+        // price = Math.round(price*100)/100
+        count+=1
+        total += price
+        // total = Math.round(total*100)/100
+        cartItem.innerHTML = `
                              <img src="${value.img}" alt="">
                                 <div class="details">
                                 <h3>${value.name}</h3>
                                     <p>
                                         <span class="quantity">${value.quantity}</span>
-                                        <span class="price">${price}</span>
+                                        <span class="price">R ${price}</span>
                                     </p>
                                     </div>
                                 <div class="cancel"><i class="bi bi-x-circle-fill"></i></div>
@@ -136,10 +136,13 @@ function updateCartUI() {
     let root = document.querySelector(":root");
     root.style.setProperty("--after-content", `"${count}"`);
     const subtotal = document.querySelector(".subtotal");
-    subtotal.innerHTML = `SubTotal: ${total}`;
-  } else cartIcon.classList.remove("non-empty");
+    subtotal.innerHTML = `SubTotal:R ${total}`;
+  } else 
+    cartIcon.classList.remove("non-empty");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartUI();
 });
+
+
