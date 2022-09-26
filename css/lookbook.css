@@ -1,0 +1,26 @@
+.trending {
+    padding-top: 3rem;
+    text-align: center;
+    padding-bottom: 1.1rem;
+}
+
+.headingcaps {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Hover effects */
+.img-hover {
+    position: relative;
+    padding: 2px;
+}
+
+.img-hover:hover {
+   padding: 8px;
+   border: 1px solid #000;
+   transition: 0.5s;
+}
