@@ -110,10 +110,10 @@ function updateCartUI(){
         const cartItem = document.createElement('div')
         cartItem.classList.add('cart-item')
         let price = value.price * value.quantity
-        // price = Math.round(price*100)/100
+        price = Math.round(price*100)/100
         count+=1
         total += price
-        // total = Math.round(total*100)/100
+        total = Math.round(total*100)/100
         cartItem.innerHTML = `
                              <img src="${value.img}" alt="">
                                 <div class="details">
