@@ -20,8 +20,11 @@ items you want to a cart.
 The About page gives you a brief history of the company and what we stand for as well
 as a mission statement.
 
-The Lookbook page displays all the latest and greatest that we have to offer which means
-you will be able to add all those items to the cart for purchasing. 
+The Lookbook page displays all the latest and greatest trends as well as what some of the items 
+we offer online. 
+
+The shop page displays all items in store that you will be able to purchase buy selecting add to cart and then you 
+will be able to checkout with those items. 
 
 The Contact page displays all relevant information in regards to contacting us. There is a 
 map to our location as well as our contact details like email, address and telephone number
