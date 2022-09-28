@@ -714,6 +714,7 @@ nav .fa {
         font-weight: 600
     }
 }
+    
 
 
 
@@ -900,4 +901,15 @@ h1.heading {
   #cart-icon {
     font-size: 1rem;
     cursor: pointer;
+}
+
+/* featured products */
+
+.featured {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.brands {
+    padding: 15px;
 }
