@@ -146,3 +146,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Filter by categories
+function apparel(){
+  document.getElementById("sneaker").style.display = "none";
+  document.getElementById("accessories").style.display = "none";
+}
+
+function sneakers(){
+  document.getElementById("apparel").style.display = "none";
+  document.getElementById("accessories").style.display = "none"; 
+}
+
+function showAll(){
+  document.getElementById("sneaker").style.display = "block";
+  document.getElementById("apparel").style.display = "block";
+  document.getElementById("accessories").style.display = "block";  
+}
+
+function accessories(){
+  document.getElementById("sneaker").style.display = "none";
+  document.getElementById("apparel").style.display = "none"; 
+}
+

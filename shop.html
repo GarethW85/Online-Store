@@ -34,34 +34,12 @@
                 <li><a href="./shop.html">SHOP</a></li>
                 <li><a href="./contact.html">CONTACT</a></li>
                 <li><a href="./cart.html"><i class="bi bi-bag" id="cart-icon"></i></a></li>
+                <span class="non-empty"></span>
                 <!-- cart drop down section -->
                 <div class="cart-box">
                     <div class="whole-cart-window hide">
                         <h2>Your Items</h2>
                         <div class="cart-wrapper">
-                            <!-- <div class="cart-item">
-                                <img src="./images/products/sneakers/airmax1-patta-monarch.jpg" alt="">
-                                <div class="details">
-                                    <h3>Item Name</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        <span class="quantity">Quantity: 1</span>
-                                        <span class="price">Price: R4500</span>
-                                    </p>
-                                </div>
-                                <div class="cancel"><i class="bi bi-x-circle-fill"></i></div>
-                            </div> -->
-                            <!-- item 2 -->
-                            <!-- <div class="cart-item">
-                                <img src="./images/products/sneakers/airmax1-patta-monarch.jpg" alt="">
-                                <div class="details">
-                                    <h3>Item Name</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        <span class="quantity">Quantity: 1</span>
-                                        <span class="price">Price: R4500</span>
-                                    </p>
-                                </div>
-                                <div class="cancel"><i class="bi bi-x-circle-fill"></i></div>
-                            </div> -->
                         </div>
                         <div class="subtotal">Subtotal: R0.00</div>
                          <div class="checkout">Checkout</div>
@@ -76,7 +54,15 @@
 </section>
 
 <!-- Shopping Area -->
-<section class="shop container">
+<section class="container d-flex justify-content-center pt-5 filters">
+    <div id="buttons">
+        <button class="hero-btn-clean font" onclick="showAll()">Show All</button>
+        <button class="hero-btn-clean font" onclick="sneakers()">Sneakers</button>
+        <button class="hero-btn-clean font" onclick="apparel()">Apparel</button>
+        <button class="hero-btn-clean font" onclick="accessories()">Accessories</button>
+    </div>
+</section>
+<section class="shop container" id="sneaker">
     <h2 class="section-title" id="sneakers">Sneakers</h2>
     <!-- Content -->
         <div class="shop-content card-wrapper">
@@ -106,7 +92,7 @@
             <div data-id="3" class="product-box card-item">
                 <img src="./images/products/sneakers/airmax1-patta-whitesilver.jpg" alt="" class="product-img">
                 <div class="details">
-                <h2 class="product-title">AM1 PATTA WHITE SILVER</h2>
+                <h2 class="product-title">AM 1 PATTA WHITE</h2>
                     <p>
                         <span class="price">R6500</span>
                         <i class="bi bi-bag add-cart" id="cart-icon"></i>
@@ -117,7 +103,7 @@
             <div data-id="4" class="product-box card-item">
                 <img src="./images/products/sneakers/newbalance-9060-joefreshgoods.jpg" alt="" class="product-img">
                 <div class="details">
-                <h2 class="product-title">NEW BALANCE 9060 JFG</h2>
+                <h2 class="product-title">NEW BALANCE 9060</h2>
                     <p>
                         <span class="price">R5000</span>
                         <i class="bi bi-bag add-cart" id="cart-icon"></i>
@@ -128,7 +114,7 @@
             <div data-id="5" class="product-box card-item">
                 <img src="./images/products/sneakers/yeezy-500.jpg" alt="" class="product-img">
                 <div class="details">
-                <h2 class="product-title">YEEZY 500 TAUPE HAZE</h2>
+                <h2 class="product-title">YEEZY 500 TAUPE</h2>
                     <p>
                         <span class="price">R4500</span>
                         <i class="bi bi-bag add-cart" id="cart-icon"></i>
@@ -214,7 +200,7 @@
             </div>
         </div>
 </section>
-<section class="shop container">
+<section class="shop container" id="apparel">
     <h2 class="section-title" id="apparel">Apparel</h2>
     <!-- Content -->
         <div class="shop-content card-wrapper">
@@ -320,7 +306,7 @@
             </div>
         </div>
 </section>
-<section class="shop container">
+<section class="shop container" id="accessories">
     <h2 class="section-title" id="accessories">Accessories</h2>
     <!-- Content -->
         <div class="shop-content card-wrapper">
