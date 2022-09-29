@@ -2,15 +2,11 @@
 
 I created an online store using Html, CSS, Bootstrap & Javascript.
 
-
-```bash
-```
+## Usage
 
 ## Usage
 
 ```python
-Live Demo coming soon ...
-
 
 The first page is the index page that greets users and as your scroll down you will see
 all the new items that have just arrived in store as well as categories for Apparel, Sneakers & 
@@ -24,7 +20,7 @@ The Lookbook page displays all the latest and greatest trends as well as what so
 we offer online. 
 
 The shop page displays all items in store that you will be able to purchase buy selecting add to cart and then you 
-will be able to checkout with those items. 
+will be able to checkout with those items. The option for filtering categories is also available. 
 
 The Contact page displays all relevant information in regards to contacting us. There is a 
 map to our location as well as our contact details like email, address and telephone number
