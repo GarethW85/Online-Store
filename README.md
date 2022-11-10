@@ -2,6 +2,8 @@
 
 I created an online store using Html, CSS, Bootstrap & Javascript.
 
+https://garethw85.github.io/Online-Store/
+
 ## Usage
 
 ## Usage
